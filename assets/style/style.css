@@ -1,0 +1,19 @@
+.bg-1{
+    background-color:#1F1F1F;
+}
+
+.bg-2{
+    background-color: #303030
+}
+
+
+
+.sticky1{
+    background-color: #303030;
+    transition: 0.8s;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  .sticky1 a{
+    color: white !important;
+  }
