@@ -7,7 +7,6 @@
 }
 
 
-
 .sticky1{
     background-color: #303030;
     transition: 0.8s;
@@ -16,4 +15,16 @@
   
   .sticky1 a{
     color: white !important;
+  }
+
+
+
+  /* proyects */
+
+
+  .container-proyects{
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    border: solid black 1px;
   }

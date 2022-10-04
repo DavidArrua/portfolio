@@ -15,44 +15,55 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg bg-1 sticky-top">
-      <div class="container">
-         <a class="navbar-brand text-light" href="#">Navbar</a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-               <li class="nav-item ">
-                  <a class="nav-link text-light" href="#">Inicio</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Sobre mí</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Proyectos</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contacto</a>
-               </li>
-            </ul>
+   <div id="app">
+      <nav class="navbar navbar-expand-lg bg-1 sticky-top">
+         <div class="container">
+            <a class="navbar-brand text-light" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item ">
+                     <a class="nav-link text-light" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#">Contacto</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="bg-1 vh-100">
+         <h1>BIENVENIDOS</h1>
+      </div>
+      <div class="bg-danger vh-100">
+
+      </div>
+      <div class="bg-2 vh-100 d-flex justify-content-center align-items-center flex-wrap">
+         <div class="d-flex flex-column">
+            <div>
+               <h2 class="text-white">Proyectos</h2>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-1">
+               <div class="container-proyects" v-for="proyect in proyects">
+                  <p>{{proyect.name}}</p>
+                  <img class="w-100 h-75" :src="proyect.img" alt="">
+               </div>
+            </div>
          </div>
       </div>
-   </nav>
-   <div class="bg-1 vh-100">
-      <h1>BIENVENiDOS</h1>
    </div>
-   <div class="bg-danger vh-100">
-
-   </div>
-   <div class="bg-info vh-100">
-
-   </div>
-
 
    <script>
-      window.addEventListener("scroll", function () {
+      window.addEventListener("scroll", ()=> {
          var nav = document.querySelector("nav")
          nav.classList.toggle("sticky1", window.scrollY > 1)
       })
