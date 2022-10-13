@@ -29,10 +29,13 @@
                      <a class="nav-link text-light" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-light" href="#">Sobre mí</a>
+                     <a class="nav-link text-light" href="#about-me">Sobre mí</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-light" href="#">Proyectos</a>
+                     <a class="nav-link text-light" href="#proyects">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light" href="#certifications">Certificaciones</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link text-light" href="#">Contacto</a>
@@ -44,10 +47,13 @@
       <div class="bg-1 vh-100">
          <h1>BIENVENIDOS</h1>
       </div>
+      <div class="bg-info vh-100" id="about-me">
+
+      </div>
       <div class="bg-danger vh-100">
 
       </div>
-      <div class="bg-2 vh-100 d-flex justify-content-center align-items-center flex-wrap">
+      <div class="bg-2 vh-100 d-flex justify-content-center align-items-center flex-wrap" id="proyects">
          <div class="d-flex flex-column">
             <div>
                <h2 class="text-white">Proyectos</h2>
@@ -60,15 +66,12 @@
             </div>
          </div>
       </div>
+      <div class="bg-danger vh-100" id="certifications">
+
+      </div>
    </div>
 
-   <script>
-      window.addEventListener("scroll", ()=> {
-         var nav = document.querySelector("nav")
-         nav.classList.toggle("sticky1", window.scrollY > 1)
-      })
-   </script>
-
+   
    <!-- JavaScript Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

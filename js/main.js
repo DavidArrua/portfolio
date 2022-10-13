@@ -1,3 +1,9 @@
+window.addEventListener("scroll", ()=> {
+  var nav = document.querySelector("nav")
+  nav.classList.toggle("sticky1", window.scrollY > 1)
+})
+
+
 const app = Vue.
   createApp({
     data() {
