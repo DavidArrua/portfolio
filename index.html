@@ -77,8 +77,12 @@
             </div>
          </div>
       </div>
-      <div class="bg-1 vh-100" id="certifications">
-         
+      <div class="bg-1 vh-100 d-flex gap-1 justify-content-center align-items-center" id="certifications">
+         <div v-for="certification in certifications" class="certification bg-light">
+            <p>{{certification.name}}</p>
+            <a :href="certification.URL"></a>
+            
+         </div>
       </div>
       <div class="bg-info vh-100" id="contact">
 

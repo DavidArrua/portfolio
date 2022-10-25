@@ -42,3 +42,12 @@ body::-webkit-scrollbar-thumb{
     background-color: aliceblue;
     border: solid black 1px;
   }
+
+
+
+  /* certifications */
+
+  .certification{
+    width: 300px;
+    height: 250px;
+  }
