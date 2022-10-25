@@ -7,7 +7,7 @@ body::-webkit-scrollbar{
 
 
 body::-webkit-scrollbar-thumb{
-  background: white;
+  background: #645caa;
   border-radius: 10px;
   border-right:2px solid #1F1F1F;
 }
