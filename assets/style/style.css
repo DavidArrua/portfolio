@@ -21,6 +21,9 @@ body::-webkit-scrollbar-thumb{
     background-color: #303030
 }
 
+
+/* nav */
+
 .sticky1{
     background-color: #303030;
     transition: 0.8s;
@@ -31,6 +34,21 @@ body::-webkit-scrollbar-thumb{
     color: white !important;
   }
 
+  nav li a::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    margin: auto;
+    display: block;
+  }
+
+  nav li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+    
+  }
 
 
   /* proyects */

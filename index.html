@@ -30,9 +30,6 @@
                      <a class="nav-link text-light" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-light" href="#about-me">Sobre mí</a>
-                  </li>
-                  <li class="nav-item">
                      <a class="nav-link text-light" href="#proyects">Proyectos</a>
                   </li>
                   <li class="nav-item">
@@ -58,9 +55,6 @@
                Fuga.</p>
          </div>
       </div>
-      <div class="bg-info vh-100" id="about-me">
-
-      </div>
       <div class="bg-danger vh-100">
 
       </div>
@@ -80,7 +74,7 @@
       <div class="bg-1 vh-100 d-flex gap-1 justify-content-center align-items-center" id="certifications">
          <div v-for="certification in certifications" class="certification bg-light">
             <p>{{certification.name}}</p>
-            <a :href="certification.URL"></a>
+            <a :href="certification.URL" target="_blank">ver certificado</a>
             
          </div>
       </div>
@@ -96,6 +90,11 @@
       crossorigin="anonymous"></script>
    <!-- vue -->
    <script src="https://unpkg.com/vue@3"></script>
+   
+   <!--data-->
+   <script src="./data/proyects-data.js"></script>
+   <script src="./data/certifications-data.js"></script>
+
    <!--main js-->
    <script src="./js/main.js"></script>
 </body>
